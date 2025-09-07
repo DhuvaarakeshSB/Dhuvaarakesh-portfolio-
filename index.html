@@ -1,0 +1,272 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>S.B. Dhuvaarakesh | Portfolio</title>
+  <style>
+    :root {
+      --header-h: 110px;
+      --primary: #00c9a7;
+      --secondary: #0077ff;
+      --dark: #1c1c1c;
+      --light: #f9f9f9;
+      --card-bg: #ffffff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-h);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: #fff;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    .hero img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: .4rem;
+      color: #fff;
+    }
+    .hero h3 {
+      font-weight: 300;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      margin-top: .75rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .75rem 1rem;
+      background: rgba(0,0,0,0.25);
+      padding: .7rem 1rem;
+      backdrop-filter: blur(4px);
+    }
+
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: .35rem .6rem;
+      border-radius: 8px;
+      transition: 0.25s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #fff;
+      background: var(--primary);
+      box-shadow: 0 0 10px var(--primary);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      opacity: 0.25;
+      transform: translateY(20px);
+      transition: opacity .6s ease, transform .6s ease, box-shadow .3s ease;
+    }
+
+    section.active {
+      opacity: 1;
+      transform: translateY(0);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    h2 {
+      margin-bottom: .8rem;
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: .3rem;
+      color: var(--secondary);
+    }
+
+    ul { margin-left: 1.3rem; margin-top: .5rem; }
+
+    .contact p, .contact a {
+      margin: .4rem 0;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      color: var(--secondary);
+      text-shadow: 0 0 5px var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--dark);
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.7rem; }
+      .hero h3 { font-size: .95rem; }
+      section { padding: 1.5rem; }
+      nav a { font-size: .95rem; }
+      .hero img { width: 100px; height: 100px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="hero">
+      <!-- Working profile image -->
+      <img src="https://i.postimg.cc/Ty1zSMSr/profile.jpg" alt="Profile Image">
+      <h1>S.B. DHUVAARAKESH</h1>
+      <h3>Aspiring AI & Data Science Engineer</h3>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#strengths">Strengths</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Aspiring AI and Data Science engineer with strong skills in Python, problem-solving,
+      and project development. Passionate about building intelligent systems and innovative applications.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Programming:</strong> Python, C</p>
+    <p><strong>Tools:</strong> Arduino, Figma (learning), Canva</p>
+    <p><strong>Soft Skills:</strong> Communication, Teamwork, Leadership, Problem-Solving</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p><strong>Emergency SOS Device (Team Project)</strong><br>
+    Integrated GSM/GPS and heart-rate sensor to develop a women's safety device. 
+    Sends real-time SOS alerts during emergencies, enabling rapid response.</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Paper Presentation: <em>"AI in Cybersecurity: Enhancing Threat Detection and Prevention"</em> at Symposium.</li>
+    </ul>
+  </section>
+
+  <section id="strengths">
+    <h2>Strengths</h2>
+    <ul>
+      <li>Problem-Solving Mindset</li>
+      <li>Quick Learner</li>
+      <li>Creativity</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Playing Cricket</li>
+      <li>Listening to Music</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>📍 Modakurichi, Tamil Nadu</p>
+      <p>📧 <a href="mailto:sbdhuvaara@gmail.com">sbdhuvaara@gmail.com</a></p>
+      <p>📱 +91 8438293318</p>
+      <p>🌐 <a href="https://github.com/dhuvaarakeshSB">GitHub</a> | 
+         <a href="https://www.linkedin.com/in/dhuvaarakesh-s-b-d-974236324">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 S.B. Dhuvaarakesh | Aspiring AI & Data Science Engineer</p>
+  </footer>
+
+  <script>
+    const header = document.getElementById('site-header');
+    const setHeaderOffset = () => {
+      const h = header.offsetHeight;
+      document.documentElement.style.setProperty('--header-h', h + 'px');
+    };
+    window.addEventListener('load', setHeaderOffset);
+    window.addEventListener('resize', setHeaderOffset);
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    const setActiveLink = (id) => {
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+      });
+    };
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          setActiveLink(entry.target.id);
+        }
+      });
+    }, { threshold: 0.35 });
+
+    sections.forEach(sec => io.observe(sec));
+
+    window.addEventListener('load', () => {
+      if (location.hash) {
+        const target = document.querySelector(location.hash);
+        if (target) setActiveLink(target.id);
+      } else {
+        sections[0].classList.add('active');
+        setActiveLink(sections[0].id);
+      }
+    });
+  </script>
+</body>
+</html>
